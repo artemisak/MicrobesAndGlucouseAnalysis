@@ -1,0 +1,40 @@
+"feature"	"enrich_group"	"ef_lda"	"pvalue"	"padj"
+"marker1"	"OTU_13 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Dorea NA"	"Да"	3.98335217997141	0.0112619394856046	0.0112619394856046
+"marker2"	"OTU_15 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Fusicatenibacter NA"	"Да"	3.88952594022917	0.00451883330682687	0.00451883330682687
+"marker3"	"OTU_25 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae [Ruminococcus] torques group NA"	"Да"	3.77451155644877	0.0312816234138172	0.0312816234138172
+"marker4"	"OTU_153 Bacteria Firmicutes Clostridia Clostridia UCG-014 NA NA NA"	"Да"	3.6531740588684	0.033933613851449	0.033933613851449
+"marker5"	"OTU_196 Bacteria Bacteroidota Bacteroidia Bacteroidales Prevotellaceae NA NA"	"Да"	3.59612410470937	0.0454907102329498	0.0454907102329498
+"marker6"	"OTU_190 Bacteria Bacteroidota Bacteroidia Bacteroidales Prevotellaceae Prevotella_9 NA"	"Да"	3.5773892010432	0.0228164728363227	0.0228164728363227
+"marker7"	"OTU_34 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Coprococcus comes"	"Да"	3.50983938529917	0.0332328674074344	0.0332328674074344
+"marker8"	"OTU_210 Bacteria Actinobacteriota Coriobacteriia Coriobacteriales Coriobacteriales Incertae Sedis NA NA"	"Да"	3.26222728631814	0.0351668398734927	0.0351668398734927
+"marker9"	"OTU_44 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Dorea NA"	"Да"	3.2164921073329	0.0288240417859921	0.0288240417859921
+"marker10"	"OTU_84 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Roseburia NA"	"Да"	3.09226316465196	0.0419886525620003	0.0419886525620003
+"marker11"	"OTU_152 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Lachnoclostridium edouardi"	"Да"	2.86339009844175	0.0263583053151183	0.0263583053151183
+"marker12"	"OTU_110 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Marvinbryantia NA"	"Да"	2.76720866924046	0.00781758369948482	0.00781758369948482
+"marker13"	"OTU_123 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Lachnospiraceae FCS020 group NA"	"Да"	2.73818076493952	0.0154487474189246	0.0154487474189246
+"marker14"	"OTU_132 Bacteria Firmicutes Clostridia Oscillospirales Ruminococcaceae Incertae Sedis NA"	"Да"	2.62766295972358	0.0331311102736422	0.0331311102736422
+"marker15"	"OTU_354 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae [Eubacterium] hallii group NA"	"Да"	2.55034889746083	0.0228164728363227	0.0228164728363227
+"marker16"	"OTU_239 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Marvinbryantia NA"	"Да"	2.49879906613288	0.0388056362513931	0.0388056362513931
+"marker17"	"OTU_459 Bacteria Firmicutes Bacilli Lactobacillales Lactobacillaceae Lactobacillus NA"	"Да"	2.36189402971357	0.0454907102329498	0.0454907102329498
+"marker18"	"OTU_396 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae NA NA"	"Да"	2.32674671203199	0.0158599627189195	0.0158599627189195
+"marker19"	"OTU_439 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Lachnoclostridium NA"	"Да"	2.26486731908373	0.00906182456517247	0.00906182456517247
+"marker20"	"OTU_677 Bacteria Firmicutes Clostridia Oscillospirales Oscillospiraceae Colidextribacter NA"	"Да"	2.09247688433551	0.0474013509871092	0.0474013509871092
+"marker21"	"OTU_359 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae NA NA"	"Да"	2.07646102913605	0.0348839941177019	0.0348839941177019
+"marker22"	"OTU_20 Bacteria Firmicutes Clostridia Oscillospirales Oscillospiraceae UCG-002 NA"	"Нет"	4.13318589255734	0.0419971586809871	0.0419971586809871
+"marker23"	"OTU_33 Bacteria Bacteroidota Bacteroidia Bacteroidales Muribaculaceae NA NA"	"Нет"	4.13011842893138	0.0409407023543757	0.0409407023543757
+"marker24"	"OTU_76 Bacteria Firmicutes Clostridia Oscillospirales [Eubacterium] coprostanoligenes group NA NA"	"Нет"	3.22056355951489	0.035426169905475	0.035426169905475
+"marker25"	"OTU_195 Bacteria Firmicutes Clostridia Oscillospirales Ruminococcaceae Ruminococcus champanellensis"	"Нет"	3.20491641530988	0.00524248398651644	0.00524248398651644
+"marker26"	"OTU_98 Bacteria Firmicutes Clostridia Christensenellales Christensenellaceae NA NA"	"Нет"	3.06316291236241	0.0213676035433182	0.0213676035433182
+"marker27"	"OTU_124 Bacteria Firmicutes Clostridia Oscillospirales Oscillospiraceae UCG-002 NA"	"Нет"	2.81849091904703	0.0280532205346718	0.0280532205346718
+"marker28"	"OTU_230 Bacteria Firmicutes Clostridia Oscillospirales [Eubacterium] coprostanoligenes group NA NA"	"Нет"	2.76813164140721	0.0416131800556572	0.0416131800556572
+"marker29"	"OTU_256 Bacteria Firmicutes Clostridia Christensenellales Christensenellaceae Christensenellaceae R-7 group NA"	"Нет"	2.55360991399274	0.0465130759087547	0.0465130759087547
+"marker30"	"OTU_338 Bacteria Firmicutes Clostridia NA NA NA NA"	"Нет"	2.54501202856318	0.0313549240024097	0.0313549240024097
+"marker31"	"OTU_305 Bacteria Bacteroidota Bacteroidia Bacteroidales Tannerellaceae Parabacteroides distasonis"	"Нет"	2.47943913169771	0.0346821931091897	0.0346821931091897
+"marker32"	"OTU_312 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Blautia NA"	"Нет"	2.38445236375999	0.0442726666256478	0.0442726666256478
+"marker33"	"OTU_496 Bacteria Firmicutes Clostridia Clostridia UCG-014 NA NA NA"	"Нет"	2.36994266969871	0.0315777732225873	0.0315777732225873
+"marker34"	"OTU_420 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Sellimonas NA"	"Нет"	2.3667450983563	0.0416131800556572	0.0416131800556572
+"marker35"	"OTU_193 Bacteria Firmicutes Clostridia Peptostreptococcales-Tissierellales Anaerovoracaceae Family XIII AD3011 group NA"	"Нет"	2.28869240047491	0.0179127865593603	0.0179127865593603
+"marker36"	"OTU_454 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae UC5-1-2E3 NA"	"Нет"	2.205335062557	0.0186222050241459	0.0186222050241459
+"marker37"	"OTU_399 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Eisenbergiella tayi"	"Нет"	2.20071921268728	0.033933613851449	0.033933613851449
+"marker38"	"OTU_257 Bacteria Desulfobacterota Desulfovibrionia Desulfovibrionales Desulfovibrionaceae Bilophila wadsworthia"	"Нет"	2.16512070556261	0.049115809216657	0.049115809216657
+"marker39"	"OTU_337 Bacteria Firmicutes Clostridia Christensenellales Christensenellaceae Christensenellaceae R-7 group NA"	"Нет"	2.0805371332503	0.0318733380247545	0.0318733380247545
