@@ -1,0 +1,13 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: gdown in c:\users\artis\appdata\roaming\python\python310\site-packages (5.0.1)
+Requirement already satisfied: beautifulsoup4 in c:\users\artis\appdata\roaming\python\python310\site-packages (from gdown) (4.12.3)
+Requirement already satisfied: filelock in c:\users\artis\appdata\roaming\python\python310\site-packages (from gdown) (3.13.1)
+Requirement already satisfied: requests[socks] in c:\users\artis\appdata\roaming\python\python310\site-packages (from gdown) (2.31.0)
+Requirement already satisfied: tqdm in c:\users\artis\appdata\roaming\python\python310\site-packages (from gdown) (4.66.1)
+Requirement already satisfied: soupsieve>1.2 in c:\users\artis\appdata\roaming\python\python310\site-packages (from beautifulsoup4->gdown) (2.5)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\artis\appdata\roaming\python\python310\site-packages (from requests[socks]->gdown) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\artis\appdata\roaming\python\python310\site-packages (from requests[socks]->gdown) (3.6)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\artis\appdata\roaming\python\python310\site-packages (from requests[socks]->gdown) (2.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\artis\appdata\roaming\python\python310\site-packages (from requests[socks]->gdown) (2023.11.17)
+Requirement already satisfied: PySocks!=1.5.7,>=1.5.6 in c:\users\artis\appdata\roaming\python\python310\site-packages (from requests[socks]->gdown) (1.7.1)
+Requirement already satisfied: colorama in c:\users\artis\appdata\roaming\python\python310\site-packages (from tqdm->gdown) (0.4.6)
