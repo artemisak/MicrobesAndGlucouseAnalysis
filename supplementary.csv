@@ -1,0 +1,225 @@
+Current names,Old names,New ones,Feature description
+Группа,group,Group,"group number (1 – GDM, 2 – healthy)"
+,n_cgm,CGMs order,"the order of CGMS installation (1 - first, 2 - second)"
+part_of_day,part_of_day,Diurnal interval,"time of the day (1=0–4, 2=4–8, 3=8–12, 4=12–16, 5=16–20, 6=20–24)"
+срок_берем1,preg_week,Gestational age 1,"gestational age at the time of inclusion in the study, weeks"
+daytime,time_of_day,Hour,time of the day (hour)
+,a,Retinol,"the amount of retinol in the meal, mcg"
+,b1,Thiamine,"the amount of thiamine in the meal,  mg"
+,b2,Roboflavin,"the amount of riboflavin in the meal,  mg"
+,c,Ascorbic,"the amount of ascorbic acid, mg"
+,ca,Ca,"the amount of Ca in the meal,  mg"
+carbo,carbo,Carbohydrates,"the amount of carbohydrates in the meal,  g"
+fat,fat,Fats,"the amount of fats in the meal, g"
+,fe,Iron,"the amount of iron in the meal, mg"
+gi,gi,Glycemic index,glycemic index of the meal
+gl,gl,Glycemic load,glycemic load of the meal
+,k,K,"the amount of K in the meal,  mg"
+,kar,Beta carotene,"the amount of beta-carotene in the meal,  mcg"
+kcal,kkal,Kcal,the energy value of the meal
+kr,kr,Starch,"the amount of starch in the meal,  g"
+mds,mds,"Mono-, di-saccharides","the amount of monosaccharides and disaccharides in the meal, g"
+,mg,Mg,"the amount of Mg in the meal, mg"
+,na,Na,"the amount of Na in the meal, mg"
+,ne,Niacin equivalent,"the amount of niacin equivalent in the meal, mg"
+,ok,Organic acids,"the amount of organic acids in the meal, g"
+,p,P,"the amount of P in the meal, in mg"
+prot,prot,Proteins,"the amount of proteins in the meal,  g"
+pv,pv,Fiber,"the amount of alimentary fiber in the meal,  g"
+,re,Retinol equivalent,"the amount of retinol equivalent in the meal,  mcg"
+meal_type_n,types_food,Meal type,"meal type (1 – breakfast, 2 – lunch, 3 – dinner, 4 – snack)"
+,water,Water,"the amount of water in the meal,  g"
+,zola,Ash,"the amount of ash in the meal, in g"
+carbo_b3h,carbo_b3h,Carbohydrates before 3h,"carbohydrates consumed within 3 hours before the meal, g"
+carbo_b6h,carbo_b6h,Carbohydrates before 6h,"carbohydrates consumed within 6 hours before the meal, g"
+carbo_b12h,carbo_b12h,Carbohydrates before 12h,"carbohydrates consumed within 12 hours before the meal, g"
+fat_b3h,fat_b3h,Fats before 3h,"fats consumed within 3 hours before the meal, g"
+fat_b6h,fat_b6h,Fats before 6h,"fats consumed within 6 hours before the meal, g"
+fat_b12h,fat_b12h,Fats  before 12h,"fats consumed within 12 hours before the meal, g"
+gl_b3h,gl_b3h,Glycemic load before 3h,glycemic load of the foods consumed within 3 hours before the meal
+gl_b6h,gl_b6h,Glycemic load before 6h,glycemic load of the foods consumed within 6 hours before the meal
+gl_b12h,gl_b12h,Glycemic load before 12h,glycemic load of the foods consumed within 12 hours before the meal
+kcal_b3h,kcal_b3h,Kcal before 3h,energy value of the foods consumed within 3 hours before the meal (kcal)
+kcal_b6h,kcal_b6h,Kcal before 6h,energy value of the foods consumed within  6 hours before the meal (kcal)
+kcal_b12h,kcal_b12h,Kcal before 12h,energy value of the foods consumed within 12 hours before the meal (kcal)
+prec_meal_gi,prec_meal_gi,Preceding meal GI,glycemic index of the preceding meal
+prec_meal_gl,prec_meal_gl,Preceding meal GL,glycemic load of the preceding meal
+prec_meal_carbo,prec_meal_carbo,Preceding meal Carbo,"the amount of carbohydrates in the preceding meal, g"
+prec_meal_prot,prec_meal_prot,Preceding meal protein,"the amount of proteins in the preceding meal, g"
+prec_meal_fat,prec_meal_fat,Preceding meal fat,"the amount of fats in the preceding meal, g"
+prec_meal_pv,prec_meal_pv,Preceding meal fiber,"the amount of alimentary fiber in the meal, g"
+,prec_meal_shift,Time shift,"time between preceding and current meals, minutes"
+prot_b3h,prot_b3h,Proteins before 3h,"proteins consumed within 3 hours before the meal, g"
+prot_b6h,prot_b6h,Proteins before 6h,"proteins consumed within  6 hours before the meal, g"
+prot_b12h,prot_b12h,Proteins before 12h,"proteins consumed within 12 hours before the meal, g"
+pv_b3h,pv_b3h,Fiber before 3h,"alimentary fibers consumed 3 hours before the meal, g"
+pv_b6h,pv_b6h,Fiber before 6h,"alimentary fibers consumed 6 hours before the meal, g"
+pv_b12h,pv_b12h,Fiber before 12h,"alimentary fibers consumed 12 hours before the meal, g"
+АГ,AH,Arterial hypertension,arterial hypertension in history
+,AI_V1,Atherogenic index 1,atherogenic index at the time of inclusion in the study (V1)
+Возраст,Age,Age,"age, years"
+БОМК_визит1,beta_OHB_V1,Beta-hydroxybutyrate 1,beta-hydroxybutyrate level at the time of inclusion in the study
+ИМТ,BMI,BMI,"prepregnancy body mass index, kg/m2"
+АД_диаст1,BP_dyast1,Diastolic blood pressure 1,"diastolic blood pressure at the time of inclusion in the study, mm Hg"
+АД_сист1,BP_syst1,Systolic blood pressure 1,"systolic blood pressure at the time of inclusion in the study, mm Hg"
+ИЦН,CI,Cervical insufficiency,"cervical insufficiency (1 – yes, 2 – no)"
+Хол_V1,Chol_V1,Cholesterol level 1,cholesterol level (mmol/L) at the time of inclusion in the study
+КОК,COC,COC,"combined oral contraceptive use any time before pregnancy (1 – yes, 0 – no)"
+СД_у_родственников,DM_hystory,Diabetes in family,"the presence of diabetes mellitus in the family history (1 – yes, 0 - no)"
+,Diet_start,Diet start GA,gestational age at the time dieting was started
+отеки1,edema1,Edema 1,"edema at the time of inclusion in the study (0 – no, 1 – yes)"
+,education,Education,"level of education (1 – secondary, 2 – higher)"
+глю_нт_V1,Fasting_PG,Fasting plasma glucose V1,fasting plasma glucose level at the time of inclusion in the study (mmol/L)
+Глюкоза_нт_общая,FPG_OGTT,Fasting plasma glucose OGTT,"fasting plasma glucose level in OGTT, mmol/L"
+ФР_V1,FR_V1,Fructosamine 1,serum fructosamine level (mcmol/l) at the time of inclusion in the study
+,GA_sm_stopped,Gestational age (non smoking),gestational age when smoking was stopped
+,GDM_history,GDM,"a history of GDM in previous pregnancy (1 – yes, 2 – no)"
+Срок_анализ_V1,gest_age_V1,Gestational age 1,"gestational age at the time of inclusion in the study, weeks"
+HbA1C_V1,HbA1C_V1,HbA1C 1,"glycosylated hemoglobin level at the time of inclusion in the study, %"
+ЛПВП_V1,HDLC_V1,HDLC 1,"high-density lipoprotein cholesterol level at the time of inclusion in the study, mmol/L"
+рост,height,Height,"height, cm"
+инсулин_V1,insulin_V1,Plasma insulin level 1,"plasma insulin level at the time of inclusion in the study, "
+,IGT,IGT before pregnancy,impaired glucose tolerance before pregnancy
+кетоны_V1,ketones_V1,Urinary ketones 1,urinary ketones level at the time of inclusion in the study
+ЛПНП_V1,LDLC_V1,LDLC 1,"low-density lipoprotein cholesterol level at the time of inclusion in the study, mmol/L"
+лептин_V1,leptin_V1,Leptin 1,"serum leptin level at the time of inclusion in the study, ng/ml"
+menses,menses,Menses,"the presence of a regular menstrual cycle before pregnancy (1 – yes, 0 – no)"
+N_абортов,N_abortions,Abortions,the number of abortions in history
+N_родов,N_deliveries,Deliveries,the number of deliveries in history
+N_беременностей,N_pregnancies,Pregnancies,"the number of pregnancies in history, including the index pregnancy"
+N_невынашивание,N_pregnancy_loss,Pregnancy losses,the number of pregnancy loss episodes in history
+СПКЯ,PCOS,PCOS,"the presence of polycystic ovary syndrome (0 – no, 1 – yes)"
+,PG_1h,1h PG in OGTT,"1-hour plasma glucose level in the OGTT, mmol/L"
+,PG_2h,2h PG in OGTT,"2-hour plasma glucose level in the OGTT, mmol/L"
+,placenta_previa,Placenta previa,"the presence of placenta previa during pregnancy (1 – yes, 0 – no)"
+,prolactin,Hyperprolactinemia,"a history of hyperprolactinemia (1 – yes, 0 – no, 2 - prolactin level is not known)"
+,smoking duration,Smoking duration,"smoking duration, years (before pregnancy)"
+ТГ_V1,TG_V1,Triglyceride 1,"serum triglyceride level at the time of inclusion in the study, mmol/L"
+,threatened_miscarriage,Miscarriage,"threatened miscarriage at any time of pregnancy (1 – yes, 0 – no)"
+ЛПОНП_V1,VLDLC_V1,VLDLC 1,very low density lipoprotein cholesterol at the time of inclusion in the study
+вес_до_берем,Weight,Weight,"prepregnancy weight, kg"
+,alcohol1,Alcohol 1,"alcohol consumption frequency before pregnancy (1 – did not consume alcohol before pregnancy, 2 – consumed alcohol before pregnancy 0.5 – 2 times/week, 3 – consumed alcohol before pregnancy more than 2 times/week)"
+,alcohol2,Alcohol 2,"alcohol consumption frequency during pregnancy (1 – did not consume alcohol before pregnancy, 2 – consumed alcohol before pregnancy 0.5 – 2 times/week, 3 – consumed alcohol before pregnancy more than 2 times/week)"
+,bread_any1,Bread 1,"frequency of eating bread (any kind) before pregnancy (1 – less than 6 times per week, 2 – 6–12 times a week, 3 – more than 12 times per week)"
+,bread_any2,Bread 2,"frequency of eating bread (any kind) during pregnancy (1 – less than 6 times per week, 2 – eating 6–12 times a week, 3 – more than 12 times per week)"
+,bread_whole_grain_bread1,Whole grain bread 1,"frequency of eating whole grain bread before pregnancy (1 – less than 1 time per week, 2 – less than 1–3 times a week, 3 – more than 3 times a week)"
+,bread_whole_grain_bread2,Whole grain bread 2,"frequency of eating whole grain bread during pregnancy (1 – less than 1 time per week, 2 – less than 1–3 times a week, 3 – more than 3 times a week)"
+,cakes1,Cakes 1,"frequency of eating cakes before pregnancy (1 – less than 2 times per week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,cakes2,Cakes 2,"frequency of eating cakes during pregnancy (1 – less than 2 times per week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,chocolate1,Chocolate 1,"frequency of eating chocolate before pregnancy (1 – less than 2 times a week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,chocolate2,Chocolate 2,"frequency of eating chocolate during pregnancy (1 – less than 2 times a week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,climbing_the_stairs1,Climbing stairs 1,"number of flights of stairs climbed before pregnancy (1 – less than 4 flights per day, 2 – 4–16 flights of stairs per day, 3 – more than 16 flights of stairs per day)"
+подъем2,climbing_the_stairs2,Climbing stairs 2,"number of flights of stairs climbed during pregnancy (1 – less than 4 flights per day, 2 – 4–16 flights of stairs per day, 3 – more than 16 flights of stairs per day)"
+,coffee1,Coffee 1,"frequency of drinking coffee before pregnancy (1 – 0–1 per day, 2 – 2–3 per day, 3 – more than 3 times per day)"
+,coffee2,Coffee 2,"frequency of drinking coffee during pregnancy (1 – 0–1 cup per day, 2 – 2–3 per day, 3 – more than 3 times per day)"
+молочное_необезжир1,dairy_products1,Dairy 1,"frequency of eating dairy products before pregnancy (1 – less than 3 times per week, 2 – 3–6 times a week, 3 – more than 6 times a week)"
+,dairy_products2,Dairy 2,"frequency of eating dairy products during pregnancy (1 – less than 3 per week, 2 – 3–6 times a week, 3 – more than 6 times a week)"
+,dried_fruits_1,Dried fruits 1,"frequency of eating dried fruit before pregnancy (1 – 0, 2 – 1–3 times a week, 3 – more than 3 times a week)"
+,dried_fruits_2,Dried fruits 2,"frequency of eating dried fruit during pregnancy (1 – 0, 2 – 1–3 times a week, 3 – more than 3 times a week)"
+,fish1,Fish 1,"frequency of fish consumption before pregnancy (1- less than 3 times per week, 2 – 3–6 times a week, 3 – more than 6 times a week)"
+,fish2,Fish 2,"frequency of fish consumption during pregnancy (1 – less than 3 times per week, 2 – 3–6 times a week, 3 – more than 6 times a week)"
+фрукты1,fruits1,Fruits 1,"frequency of eating fruits before pregnancy (1 – less than 6 per week, 2 – 6–12 per week, 3 – more than 12 per week)"
+,fruits2,Fruits 2,"frequency of eating fruits during pregnancy (1 – less than 6 per week, 2 – 6–12 per week, 3 – more than 12 per week)"
+,legumes1,Legumes 1,"frequency of eating legumes before pregnancy (1 – less than 1 time per week, 2 – 1–3 times a week, 3 – more than 3 times a week)"
+бобовые2,legumes2,Legumes 2,"frequency of eating legumes during pregnancy (1 – less than 1 time per week, 2 – 1–3 times a week, 3 – more than 3 times a week)"
+,meat1,Meat 1,"frequency of eating meat before pregnancy (1 – less than 3 times a week, 2 – 3–6 times a week, 3 – more than 6 times a week)"
+,meat2,Meat 2,"frequency of eating meat during pregnancy (1 – less than 3 times a week, 2 – 3–6 times a week, 3 – more than 6 times a week)"
+,pastries1,Pastries 1,"frequency of eating pastries before pregnancy (1 – less than 2 per week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,pastries2,Pastries 2,"frequency of eating pastries during pregnancy (1 – less than 2 times per week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,performing_sports1,Sports 1,"frequency of performing sports before pregnancy (1 – less than 2 times a week, 2 – 2–3 times a week, 3 – more than 3 times a week)"
+,performing_sports2,Sports 2,"frequency of performing sports during pregnancy (1 – less than 2 times a week, 2 – 2–3 times a week, 3 – more than 3 times a week)"
+,sauces1,Sauces 1,"frequency of using sauces before pregnancy (1 – less than 2 times per week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,sauces2,Sauces 2,"frequency of using sauces during pregnancy (1 – less than 2 times per week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+сосиски1,sausages1,Sausages 1,"frequency of consuming sausage products before pregnancy (1 - less than 1 time a week, 2 - 1–3 times a week, 3 -more than 3 times a week)"
+сосиски2,sausages2,Sausages 2,"frequency of consuming sausage products during pregnancy (1 – less than 1 time per week, 2 – 1–3 times a week, 3 – more than 3 times a week)"
+,skimmed_dairy_products1,Skimmed dairy 1,"frequency of eating skimmed dairy foods before pregnancy (1 – less than 3 times per week, 2 – 3–6 times a week, 3 – more than 6 times a week)"
+,skimmed_dairy_products2,Skimmed dairy 2,"frequency of eating skimmed dairy foods during pregnancy (1 – less than 3 times per week, 2 – 3–6 times a week, 3 – more than 6 times a week)"
+курение_до_беременности,smoking_1,Smoking 1,"smoking before pregnancy (0 – no, 1 – yes)"
+курение_во_время,smoking_2,Smoking 2,"smoking during pregnancy (0 – no, 1 – yes)"
+,sweet drinks1,Sweet drinks 1,"frequency of drinking sweet drinks before pregnancy (1 – less than 2 times per week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,sweet_drinks2,Sweet drinks 2,"frequency of drinking sweet drinks during pregnancy (1 – less than 2 times per week, 2 – 2–4 times a week, 3 – more than 4 times a week)"
+,vegetables1,Vegetables 1,"frequency of eating vegetables before pregnancy (1 – less than 6 times per week, 2 – 6–12 times a week, 3 – more than 12 times a week)"
+,vegetables1_raw,Raw vegetables 1,"frequency of eating raw vegetables before pregnancy (1 – less than 6 per week, 2 – 6–12 times a week, 3 – more than 12 times a week)"
+овощи2,vegetables2,Vegetables 2,"frequency of eating vegetables during pregnancy (1 – less than 6 per week, 2 – 6–12 times a week, 3 – more than 12 times a week)"
+,vegetables2_raw,Raw vegetables 2,"frequency of eating raw vegetables during pregnancy (1 – less than 6 per week, 2 – 6–12 times a week, 3 – more than 12 times a week)"
+,walking1,Walking 1,"duration of walking before pregnancy (1 – less than 30 minutes a day, 2 – 30–60 minutes a day, 3 – more than 60 minutes a day)"
+,walking2,Walking 2,"duration of walking during pregnancy (1 – less than 30 minutes a day, 2 – 30–60 minutes a day, 3 – more than 60 minutes a day)"
+BGb240,BGb240,GLUb240,glucose level 240 minutes before meal start (mmol/L)
+BGb120,BGb120,GLUb120,glucose level 120 minutes before meal start (mmol/L)
+BGb60,BGb60,GLUb60,glucose level 60 minutes before meal start (mmol/L)
+BGb50,BGb50,GLUb50,glucose level 50 minutes before meal start (mmol/L)
+BGb40,BGb40,GLUb40,glucose level 40 minutes before meal start (mmol/L)
+BGb30,BGb30,GLUb30,glucose level 30 minutes before meal start (mmol/L)
+BGb25,BGb25,GLUb25,glucose level 25 minutes before meal start (mmol/L)
+BGb20,BGb20,GLUb20,glucose level 20 minutes before meal start (mmol/L)
+BGb15,BGb15,GLUb15,glucose level 15 minutes before meal start (mmol/L)
+BGb10,BGb10,GLUb10,glucose 1level 0 minutes before meal start (mmol/L)
+BGb5,BGb5,GLUb5,glucose level 5 minutes before meal start (mmol/L)
+BG0,BG0,GLU0,glucose level at the beginning of the meal according to the CGM signal (mmol/L)
+,BGb60_to_mean,GLUb60_to_mean,"glucose level 60 minutes before meal start, divided by CGM_mean"
+BGRiseb240,BGRiseb240,GLURiseb240,glucose level rise from 240 minutes before the meal to meal start (mmol/L)
+BGRiseb120,BGRiseb120,GLURiseb120,glucose level rise from 120 minutes before the meal to meal start (mmol/L)
+BGRiseb60,BGRiseb60,GLURiseb120,glucose level rise from 60 minutes before the meal to meal start (mmol/L)
+,BGTrend240,GLUTrend240,glucose trend 4 hours before the meal start (mmol/L)
+,BGTrend120,GLUTrend120,glucose trend 2 hours before the meal start (mmol/L)
+,BGTrend60,GLUTrend60,glucose trend 1 hour before the meal start (mmol/L)
+iAUCb240,iAUCb240,iAUCb240,incremental AUC 240 minutes before the meal start (mmol/L*hour)
+iAUCb120,iAUCb120,iAUCb120,incremental AUC 120 minutes before the meal start (mmol/L*hour)
+iAUCb60,iAUCb60,iAUCb60,incremental AUC 60 minutes before the meal start (mmol/L*hour)
+CGMS_срок,,CGMS GA,"gestational age at the moment of CGMS installation, weeks"
+прибавка_m1,,Weight gain,"gestational weight gain by the time of  inclusion in the study, kg"
+rs10830963_MTNR1B_N,,rs10830963_MTNR1B_N,rs10830963 variant in MTNR1B gene
+АБ_бер_ть,,Antibiotics,antibiotics use any time during pregnancy
+diet_before_V1,,Diet before,"dieting before the time of  inclusion in the study (1 - yes, 0 - no)"
+Diet_duration_V1,,Diet duration,"duration of dieting before  the time of  inclusion in the study, weeks"
+OTU_110,,Lachnospiraceae/Marvinbryantia/NA/OTU_110,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Marvinbryantia NA
+OTU_123,,Lachnospiraceae/FCS020 group/NA/OTU_123,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Lachnospiraceae FCS020 group NA
+OTU_124,,Oscillospiraceae/UCG-002/NA/OTU_124,Bacteria Firmicutes Clostridia Oscillospirales Oscillospiraceae UCG-002 NA
+OTU_13,,Lachnospiraceae/Dorea/NA/OTU_13,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Dorea NA
+OTU_132,,Oscillospirales/Ruminococcaceae Incertae Sedis/NA/OTU_132,Bacteria Firmicutes Clostridia Oscillospirales Ruminococcaceae Incertae Sedis NA
+OTU_15,,Lachnospiraceae/Fusicatenibacter/NA/OTU_15,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Fusicatenibacter NA
+OTU_152,,Lachnoclostridium edouardi,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Lachnoclostridium edouardi
+OTU_153,,NA/NA/NA/OTU_153,Bacteria Firmicutes Clostridia Clostridia UCG-014 NA NA NA
+OTU_187,,Oscillospiraceae/NA/NA/OTU_187,Bacteria Firmicutes Clostridia Oscillospirales Oscillospiraceae NA NA
+OTU_190,,Prevotellaceae/Prevotella_9/NA/OTU_190,Bacteria Bacteroidota Bacteroidia Bacteroidales Prevotellaceae Prevotella_9 NA
+OTU_193,,Anaerovoracaceae Family XIII/AD3011 group/NA/OTU_193,Bacteria Firmicutes Clostridia Peptostreptococcales-Tissierellales Anaerovoracaceae Family XIII AD3011 group NA
+OTU_195,,Ruminococcus champanellensis ,Bacteria Firmicutes Clostridia Oscillospirales Ruminococcaceae Ruminococcus champanellensis
+OTU_196,,Prevotellaceae/NA/NA/OTU_196,Bacteria Bacteroidota Bacteroidia Bacteroidales Prevotellaceae NA NA
+OTU_197,,Oscillospirales [Eubacterium] coprostanoligenes group/NA/NA/OTU_197,Bacteria Firmicutes Clostridia Oscillospirales [Eubacterium] coprostanoligenes group NA NA
+OTU_20,,Oscillospiraceae UCG-002/NA/OTU_20,Bacteria Firmicutes Clostridia Oscillospirales Oscillospiraceae UCG-002 NA
+OTU_210,,Coriobacteriales Incertae Sedis/NA/NA/OTU_210,Bacteria Actinobacteriota Coriobacteriia Coriobacteriales Coriobacteriales Incertae Sedis NA NA
+OTU_230,,Oscillospirales [Eubacterium] coprostanoligenes group/NA/NA/OTU_230,Bacteria Firmicutes Clostridia Oscillospirales [Eubacterium] coprostanoligenes group NA NA
+OTU_239,,Lachnospiraceae/Marvinbryantia/NA/OTU_239,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Marvinbryantia NA
+OTU_241,,NA/NA/NA/OTU_241, Bacteria Firmicutes Clostridia Clostridia UCG-014 NA NA NA
+OTU_25,,Lachnospiraceae [Ruminococcus]/torques group/NA/OTU_25,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae [Ruminococcus] torques group NA
+OTU_256,,Christensenellaceae/R-7 group/NA/OTU_256,Bacteria Firmicutes Clostridia Christensenellales Christensenellaceae Christensenellaceae R-7 group NA
+OTU_257,,Desulfovibrionaceae/Bilophila/wadsworthia/OTU_257,Bacteria Desulfobacterota Desulfovibrionia Desulfovibrionales Desulfovibrionaceae Bilophila wadsworthia
+OTU_305,,Tannerellaceae/Parabacteroides/distasonis/OTU_305,Bacteria Bacteroidota Bacteroidia Bacteroidales Tannerellaceae Parabacteroides distasonis
+OTU_312,,Lachnospiraceae/Blautia/NA/OTU_312,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Blautia NA
+OTU_33,,Muribaculaceae/NA/NA/OTU_33,Bacteria Bacteroidota Bacteroidia Bacteroidales Muribaculaceae NA NA
+OTU_337,,Christensenellaceae/R-7 group/NA/OTU_337,Bacteria Firmicutes Clostridia Christensenellales Christensenellaceae Christensenellaceae R-7 group NA
+OTU_338,,NA/NA/NA/OTU_338,Bacteria Firmicutes Clostridia NA NA NA NA
+OTU_34,,Lachnospiraceae/Coprococcus comes/OTU_34,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Coprococcus comes
+OTU_354,,Lachnospiraceae [Eubacterium]/hallii group/NA/OTU_354,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae [Eubacterium] hallii group NA
+OTU_359,,Lachnospiraceae/NA/NA/OTU_359,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae NA NA
+OTU_396,,Lachnospiraceae/NA/NA/OTU_396,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae NA NA
+OTU_399,,Lachnospiraceae/Eisenbergiella/tayi/OTU_399,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Eisenbergiella tayi
+OTU_402,,Anaerovoracaceae Family XIII/AD3011 group/NA/OTU_402,Bacteria Firmicutes Clostridia Peptostreptococcales-Tissierellales Anaerovoracaceae Family XIII AD3011 group NA
+OTU_420,,Lachnospiraceae/Sellimonas/NA/OTU_420,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Sellimonas NA
+OTU_439,,Lachnospiraceae/Lachnoclostridium/NA/OTU_439,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Lachnoclostridium NA
+OTU_44,,Lachnospiraceae/Dorea/NA/OTU_44,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Dorea NA
+OTU_454,,Lachnospiraceae/UC5-1-2E3/NA/OTU_454,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae UC5-1-2E3 NA
+OTU_459,,Lactobacillaceae/Lactobacillus/NA/OTU_459,Bacteria Firmicutes Bacilli Lactobacillales Lactobacillaceae Lactobacillus NA
+OTU_496,,NA/NA/NA/OTU_496,Bacteria Firmicutes Clostridia Clostridia UCG-014 NA NA NA
+OTU_51,,Methanobacteriaceae/Methanosphaera/NA/OTU_51,Archaea Euryarchaeota Methanobacteria Methanobacteriales Methanobacteriaceae Methanosphaera NA
+OTU_529,,Anaerovoracaceae Family XIII/AD3011 group/NA/OTU_529,Bacteria Firmicutes Clostridia Peptostreptococcales-Tissierellales Anaerovoracaceae Family XIII AD3011 group NA
+OTU_587,,Prevotellaceae/NA/NA/OTU_587,Bacteria Bacteroidota Bacteroidia Bacteroidales Prevotellaceae NA NA
+OTU_609,,NA/NA/NA/OTU_609,Bacteria Firmicutes Bacilli RF39 NA NA NA
+OTU_677,,Oscillospiraceae/Colidextribacter/NA/OTU_677,Bacteria Firmicutes Clostridia Oscillospirales Oscillospiraceae Colidextribacter NA
+OTU_68,,Lachnospira eligens,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae [Eubacterium] eligens group NA
+OTU_712,,Christensenellaceae/Christensenellaceae R-7 group/NA/OTU_712,Bacteria Firmicutes Clostridia Christensenellales Christensenellaceae Christensenellaceae R-7 group NA
+OTU_76,,Oscillospirales [Eubacterium] coprostanoligenes group/NA/NA/OTU_76,Bacteria Firmicutes Clostridia Oscillospirales [Eubacterium] coprostanoligenes group NA NA
+OTU_77,,Intestinibacter bartlettii,Bacteria Firmicutes Clostridia Peptostreptococcales-Tissierellales Peptostreptococcaceae Intestinibacter bartlettii
+OTU_79,,Butyricicoccus faecihominis,Bacteria Firmicutes Clostridia Oscillospirales Butyricicoccaceae Butyricicoccus faecihominis
+OTU_84,,Lachnospiraceae/Roseburia/NA/OTU_84,Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Roseburia NA
+OTU_98,,Christensenellaceae/NA/NA/OTU_98,Bacteria Firmicutes Clostridia Christensenellales Christensenellaceae NA NA

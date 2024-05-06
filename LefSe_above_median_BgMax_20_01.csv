@@ -1,0 +1,16 @@
+feature,enrich_group,ef_lda,pvalue,padj,
+marker1,OTU_241 Bacteria Firmicutes Clostridia Clostridia UCG-014 NA NA NA,Да,3.135602293,0.0434528254733913,0.0434528254733913
+marker2,OTU_187 Bacteria Firmicutes Clostridia Oscillospirales Oscillospiraceae NA NA,Да,2.780640482,0.0310219559188501,0.0310219559188501
+marker3,OTU_197 Bacteria Firmicutes Clostridia Oscillospirales [Eubacterium] coprostanoligenes group NA NA,Да,2.617929363,0.0434743900402169,0.0434743900402169
+marker4,OTU_587 Bacteria Bacteroidota Bacteroidia Bacteroidales Prevotellaceae NA NA,Да,2.408643245,0.0361470435446807,0.0361470435446807
+marker5,OTU_609 Bacteria Firmicutes Bacilli RF39 NA NA NA,Да,2.384425867,0.0386774747336033,0.0386774747336033
+marker6,OTU_439 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Lachnoclostridium NA,Да,2.146676876,0.0125905084368199,0.0125905084368199
+marker7,OTU_529 Bacteria Firmicutes Clostridia Peptostreptococcales-Tissierellales Anaerovoracaceae Family XIII AD3011 group NA,Да,2.024008579,0.0361470435446807,0.0361470435446807
+marker8,OTU_51 Archaea Euryarchaeota Methanobacteria Methanobacteriales Methanobacteriaceae Methanosphaera NA,Нет,3.555873673,0.0456981725335923,0.0456981725335923
+marker9,OTU_68 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae [Eubacterium] eligens group NA,Нет,3.401940973,0.0489869496341492,0.0489869496341492
+marker10,OTU_79 Bacteria Firmicutes Clostridia Oscillospirales Butyricicoccaceae Butyricicoccus faecihominis,Нет,3.059902817,0.0264624736655674,0.0264624736655674
+marker11,OTU_77 Bacteria Firmicutes Clostridia Peptostreptococcales-Tissierellales Peptostreptococcaceae Intestinibacter bartlettii,Нет,2.809381973,0.0174703797567309,0.0174703797567309
+marker12,OTU_420 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Sellimonas NA,Нет,2.410129761,0.0268573919859631,0.0268573919859631
+marker13,OTU_402 Bacteria Firmicutes Clostridia Peptostreptococcales-Tissierellales Anaerovoracaceae Family XIII AD3011 group NA,Нет,2.381438622,0.0119902203215532,0.0119902203215532
+marker14,OTU_399 Bacteria Firmicutes Clostridia Lachnospirales Lachnospiraceae Eisenbergiella tayi,Нет,2.282775445,0.0209454347681576,0.0209454347681576
+marker15,OTU_712 Bacteria Firmicutes Clostridia Christensenellales Christensenellaceae Christensenellaceae R-7 group NA,Нет,2.119220529,0.0488895865511668,0.0488895865511668
