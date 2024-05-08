@@ -19,7 +19,8 @@ from supplementary import *
 root = os.getcwd()
 time_stamp = sys.argv[1]
 path = os.path.join(root, f'results/{time_stamp}')
-data = pd.read_pickle(os.path.join(path, 'general_data_for_training.pkl'))
+data = pd.read_csv(os.path.join(path, 'general_data_for_training.csv'))
+
 
 # Let's redefine the target variables taking into account the EDA results
 general_targets = ['BG30', 'BG60', 'BG90', 'BG120', 'BGMax',
@@ -83,11 +84,11 @@ def spliter(df: pd.DataFrame, y: str, rng: int = None):
     return train_n.tolist(), test_n.tolist()
 
 
-# Drop the outliers
-# Skip this step if you want to use a dataset of 2,706 meal records.
+# Drop the outliers with Tukey's rule
 # Generally speaking, these records are not outliers,
 # they are clinical cases that occur quite often in practice,
-# but our sample is not sufficiently diverse and large, so they are defined as outliers.
+# but our sample is not sufficiently diverse and large,
+# so they are defined as outliers.
 def drop_outliers(df: pd.DataFrame, y: str):
     q1 = df[y].quantile(0.25)
     q3 = df[y].quantile(0.75)
@@ -95,7 +96,7 @@ def drop_outliers(df: pd.DataFrame, y: str):
     lower_bound = q1 - 1.5 * iqr
     upper_bound = q3 + 1.5 * iqr
     return df[(df[y] > lower_bound) & (df[y] < upper_bound)]
-# --------------------------------------------------------------------------------------
+# -------------------------------------------------------------
 
 
 # Data transformation for training
@@ -106,15 +107,19 @@ def transform(df: pd.DataFrame, y: str, targets: list[str], rng, describe=False)
     test_data = df.loc[df.index.isin(num_test)]
     train_data_clean = drop_outliers(train_data, y)
     if describe:
-        describe_data(train_data_clean, path, f'clean_train_{y}')
-        train_data_clean.drop(columns=['meal_id', 'ts_meal_diary'], axis=1, inplace=True, errors='ignore')
+        # describe_data(train_data_clean, path, f'clean_train_{y}')
+        train_data_clean = train_data_clean.drop(columns=['meal_id', 'ts_meal_diary'],
+                                                 axis=1, errors='ignore')
     test_data_clean = drop_outliers(test_data, y)
     if describe:
-        describe_data(test_data_clean, path, f'clean_test_{y}')
-        test_data_clean.drop(columns=['meal_id', 'ts_meal_diary'], axis=1, inplace=True, errors='ignore')
+        # describe_data(test_data_clean, path, f'clean_test_{y}')
+        test_data_clean = test_data_clean.drop(columns=['meal_id', 'ts_meal_diary'],
+                                               axis=1, errors='ignore')
     return (
-        (train_data_clean.loc[:, train_data_clean.columns.isin(feature_names)].to_numpy(), train_data_clean[y].to_numpy()),
-        (test_data_clean.loc[:, test_data_clean.columns.isin(feature_names)].to_numpy(), test_data_clean[y].to_numpy()),
+        (train_data_clean.loc[:, train_data_clean.columns.isin(feature_names)].to_numpy(),
+         train_data_clean[y].to_numpy()),
+        (test_data_clean.loc[:, test_data_clean.columns.isin(feature_names)].to_numpy(),
+         test_data_clean[y].to_numpy()),
         num_train, num_test, feature_names
     )
 

@@ -332,6 +332,4 @@ path = os.path.join(root, f'results/{time_stamp}')
 
 data.to_csv(os.path.join(path, 'general_data_for_training.csv'), encoding='UTF-8')
 
-data.to_pickle(os.path.join(path, 'general_data_for_training.pkl'))
-
 describe_data(data, path, 'general')
