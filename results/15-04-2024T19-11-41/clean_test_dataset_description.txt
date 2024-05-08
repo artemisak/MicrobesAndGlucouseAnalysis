@@ -1,0 +1,9 @@
+Total number of unique patients: 32
+Meals logged per participant (GDM): (24.3, 10.47902667235846, (17.805151325085227, 30.794848674914775))
+Meals logged per participant (Healhy): (26.666666666666668, 17.551511489201026, (16.736146660339717, 36.597186672993615))
+T-test between them: 0.7248434264088996
+Days logged per participant (GDM): (7.5, 2.1563858652847823, (6.163482752964718, 8.836517247035282))
+Days logged per participant (Healhy): (7.416666666666667, 2.722080495176846, (5.876532938992107, 8.956800394341226))
+T-test between them: 0.9411202944964101
+Total number of rows: 812
+Total number of features: 164

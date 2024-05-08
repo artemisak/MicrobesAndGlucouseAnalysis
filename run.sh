@@ -58,13 +58,12 @@ else
     python model.py "$timestamp"
 fi
 
-echo "Copying scripts..."
-cp supplementary.py "results/$timestamp/supplementary.py"
-cp preprocessing.py "results/$timestamp/preprocessing.py"
-cp model.py "results/$timestamp/model.py"
-cp requirements.txt "results/$timestamp/requirements.txt"
-
-echo "Scripts and execution completed successfully."
+# echo "Copying scripts..."
+# cp supplementary.py "results/$timestamp/supplementary.py"
+# cp preprocessing.py "results/$timestamp/preprocessing.py"
+# cp model.py "results/$timestamp/model.py"
+# cp requirements.txt "results/$timestamp/requirements.txt"
+# echo "Scripts and execution completed successfully."
 
 # Deactivate the virtual environment
 deactivate

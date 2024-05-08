@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import shap
 import matplotlib.pyplot as plt
-from scipy.stats import pearsonr
+from scipy.stats import pearsonr, ttest_ind
 from sklearn.metrics import r2_score
 from sklearn.linear_model import LinearRegression
 
@@ -127,10 +127,17 @@ def describe_data(df, path_to_save, mark):
     with open(os.path.join(path_to_save, f'{mark}_dataset_description.txt'),
           'w', encoding='UTF-8') as file:
         file.write(f'Total number of unique patients: {len(df.index.unique())}\n')
-        file.write(f'Total number of rows: {df.shape[0]}')
-
+        file.write(f'Meals logged per participant (GDM): {calculate_confidence_interval(df[df["Группа"] == 1].pivot_table(index="N", values="meal_id", aggfunc="count")["meal_id"])}\n')
+        file.write(f'Meals logged per participant (Healhy): {calculate_confidence_interval(df[df["Группа"] == 2].pivot_table(index="N", values="meal_id", aggfunc="count")["meal_id"])}\n')
+        file.write(f'T-test between them: {ttest_ind(df[df["Группа"] == 1].pivot_table(index="N", values="meal_id", aggfunc="count")["meal_id"], df[df["Группа"] == 2].pivot_table(index="N", values="meal_id", aggfunc="count")["meal_id"])[1]}\n')
+        file.write(f'Days logged per participant (GDM): {calculate_confidence_interval(df[df["Группа"] == 1].pivot_table(index="N", values="ts_meal_diary", aggfunc="nunique")["ts_meal_diary"])}\n')
+        file.write(f'Days logged per participant (Healhy): {calculate_confidence_interval(df[df["Группа"] == 2].pivot_table(index="N", values="ts_meal_diary", aggfunc="nunique")["ts_meal_diary"])}\n')
+        file.write(f'T-test between them: {ttest_ind(df[df["Группа"] == 1].pivot_table(index="N", values="ts_meal_diary", aggfunc="nunique")["ts_meal_diary"], df[df["Группа"] == 2].pivot_table(index="N", values="ts_meal_diary", aggfunc="nunique")["ts_meal_diary"])[1]}\n')
+        file.write(f'Total number of rows: {df.shape[0]}\n')
+        file.write(f'Total number of features: {df.shape[1]}')
 
 def calculate_confidence_interval(data, confidence_level=0.95):
+
     sample_mean = statistics.mean(data)
     sample_std_dev = statistics.pstdev(data)
 

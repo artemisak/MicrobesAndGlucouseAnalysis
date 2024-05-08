@@ -84,6 +84,10 @@ def spliter(df: pd.DataFrame, y: str, rng: int = None):
 
 
 # Drop the outliers
+# Skip this step if you want to use a dataset of 2,706 meal records.
+# Generally speaking, these records are not outliers,
+# they are clinical cases that occur quite often in practice,
+# but our sample is not sufficiently diverse and large, so they are defined as outliers.
 def drop_outliers(df: pd.DataFrame, y: str):
     q1 = df[y].quantile(0.25)
     q3 = df[y].quantile(0.75)
@@ -91,23 +95,26 @@ def drop_outliers(df: pd.DataFrame, y: str):
     lower_bound = q1 - 1.5 * iqr
     upper_bound = q3 + 1.5 * iqr
     return df[(df[y] > lower_bound) & (df[y] < upper_bound)]
+# --------------------------------------------------------------------------------------
 
 
 # Data transformation for training
-def transform(df: pd.DataFrame, y: str, targets: list[str], rng):
+def transform(df: pd.DataFrame, y: str, targets: list[str], rng, describe=False):
     num_train, num_test = spliter(df, y, rng)
     feature_names = [col for col in df.columns if col not in targets]
     train_data = df.loc[df.index.isin(num_train)]
     test_data = df.loc[df.index.isin(num_test)]
     train_data_clean = drop_outliers(train_data, y)
-    describe_data(train_data_clean, path, 'clean_train')
-    # Optional step, skip if you think it's unnecessary
+    if describe:
+        describe_data(train_data_clean, path, f'clean_train_{y}')
+        train_data_clean.drop(columns=['meal_id', 'ts_meal_diary'], axis=1, inplace=True, errors='ignore')
     test_data_clean = drop_outliers(test_data, y)
-    describe_data(test_data_clean, path, 'clean_test')
-    # -------------------------------------------------
+    if describe:
+        describe_data(test_data_clean, path, f'clean_test_{y}')
+        test_data_clean.drop(columns=['meal_id', 'ts_meal_diary'], axis=1, inplace=True, errors='ignore')
     return (
-        (train_data_clean[feature_names].to_numpy(), train_data_clean[y].to_numpy()),
-        (test_data_clean[feature_names].to_numpy(), test_data_clean[y].to_numpy()),
+        (train_data_clean.loc[:, train_data_clean.columns.isin(feature_names)].to_numpy(), train_data_clean[y].to_numpy()),
+        (test_data_clean.loc[:, test_data_clean.columns.isin(feature_names)].to_numpy(), test_data_clean[y].to_numpy()),
         num_train, num_test, feature_names
     )
 
@@ -132,7 +139,7 @@ history['baseline_model'] = {}
 print('\n\nBASELINE MODEL INFO\n')
 for target in selected_targets:
     (train, test, n_train, n_test, features) = \
-        transform(data, target, general_targets, seed)
+        transform(data, target, general_targets, seed, describe=True)
     basline_info(target, train[1], test[1], n_train, n_test)
     model = simple_model(train[0][:, 3].reshape(-1, 1), train[1])
     y_pred = model.predict(test[0][:, 3].reshape(-1, 1))

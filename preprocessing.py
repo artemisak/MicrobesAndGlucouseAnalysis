@@ -130,8 +130,7 @@ clinical_data['ЛПНП_V1'] = (clinical_data['Хол_V1'] -
                             clinical_data['ЛПВП_V1'])
 
 # Set of garbage monitoring parameters (time lags, device info etc.)
-garbage_params = ['ts_meal_start', 'ts_meal_end',
-                  'ts_meal_diary', 'meal_shift', 'meal_length',
+garbage_params = ['ts_meal_start', 'ts_meal_end', 'meal_shift', 'meal_length',
                   'preg_week', 'meal_type', 'bg_after', 'bg_after_t',
                   'pa_before', 'pa_before_t', 'pa_after', 'prec_meal_shift',
                   'meal_items', 'meal_cats', 'mass_d', 'CGM_range',
@@ -179,6 +178,9 @@ for column in original_monitoring_data.columns:
 
 original_monitoring_data.index = \
     pd.to_numeric(original_monitoring_data.index, errors='raise')
+
+original_monitoring_data['ts_meal_diary'] = \
+    pd.to_datetime(original_monitoring_data['ts_meal_diary'], format='%d.%m.%Y %H:%M:%S').dt.strftime('%Y.%m.%d')
 
 # Remove all unnecessary items
 pattern = f'Unnamed|meal_items|meal_mass|meal_time|without'
@@ -328,9 +330,8 @@ data = np.round(data, 4)
 time_stamp = sys.argv[1]
 path = os.path.join(root, f'results/{time_stamp}')
 
-data.to_csv(os.path.join(path, 'general_data_with_meals_id.csv'), encoding='UTF-8')
-data.drop(columns=['meal_id'], axis=1, inplace=True)
-
-describe_data(data, path, 'general')
+data.to_csv(os.path.join(path, 'general_data_for_training.csv'), encoding='UTF-8')
 
 data.to_pickle(os.path.join(path, 'general_data_for_training.pkl'))
+
+describe_data(data, path, 'general')
