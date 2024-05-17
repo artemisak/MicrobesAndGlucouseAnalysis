@@ -8,14 +8,11 @@ from supplementary import *
 
 os.makedirs('fast_predict_results', exist_ok=True)
 
-aics = {}
-
 for target in ['BGMax', 'iAUC120']:
 
-    aics[target] = {} 
     best_model_timestamp = '15-04-2024T19-11-41' if target == 'BGMax' else '15-04-2024T14-04-41'
 
-    for feature_group in ['baseline_model', *[f'feature_group_{i}' for i in range(1, 5)]]:
+    for feature_group in ['baseline_model', *[f'feature_group_{i}' for i in range(1, 3)]]:
         
         path_to_get = f"results/{best_model_timestamp}/{feature_group}/{target}"
         
@@ -61,7 +58,3 @@ for target in ['BGMax', 'iAUC120']:
             
             plot_scatter(true=y_test, predicted=y_pred, focal_feature_group=feature_group, focal_target=target,
                         path_to_save=os.path.join(os.getcwd(), path_to_put))
-            
-        aics[target][feature_group] = calculate_aic(y_test, y_pred, 2 if feature_group == 'baseline_model' else model.num_trees())
-        
-    print(f'AIC for {target} with different features: ', aics[target])

@@ -157,3 +157,10 @@ def simple_model(X_train, y_train):
     lr_model = LinearRegression()
     lr_model.fit(X_train, y_train)
     return lr_model
+
+
+def extend_supplementary():
+    mapped_groups = pd.DataFrame([(column, feature) for column, features in groups.items() for feature in features], columns=['group', 'feature'])
+    supplementary = pd.read_csv('supplementary.csv')
+    supplementary['group'] = supplementary['Current names'].map(dict(zip(mapped_groups['feature'], mapped_groups['group'])))
+    supplementary.to_csv('supplementary.csv', encoding='UTF-8', decimal='.', sep=',')

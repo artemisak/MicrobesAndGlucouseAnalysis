@@ -19,7 +19,7 @@ from supplementary import *
 root = os.getcwd()
 time_stamp = sys.argv[1]
 path = os.path.join(root, f'results/{time_stamp}')
-data = pd.read_csv(os.path.join(path, 'general_data_for_training.csv'))
+data = pd.read_csv(os.path.join(path, 'general_data_for_training.csv'), index_col='N')
 
 
 # Let's redefine the target variables taking into account the EDA results
@@ -64,10 +64,8 @@ cgms_features = {'iAUCb240', 'iAUCb120', 'iAUCb60', 'BGRiseb240', 'BGRiseb120',
                  'BGRiseb60', 'BGb240', 'BGb120', 'BGb60', 'BGb50', 'BGb40',
                  'BGb30', 'BGb25', 'BGb20', 'BGb15', 'BGb10', 'BGb5', 'BG0'}
 
-feature_group_1 = copy.deepcopy(clinical_features)
-feature_group_2 = feature_group_1 | micr_features
-feature_group_3 = feature_group_1 | cgms_features
-feature_group_4 = feature_group_1 | micr_features | cgms_features
+feature_group_1 = clinical_features | cgms_features
+feature_group_2 = clinical_features | micr_features | cgms_features
 
 # Setup control over randomnes.
 # You can use the same seed we used during training,
@@ -101,18 +99,19 @@ def drop_outliers(df: pd.DataFrame, y: str):
 
 # Data transformation for training
 def transform(df: pd.DataFrame, y: str, targets: list[str], rng, describe=False):
+    print(df.head())
     num_train, num_test = spliter(df, y, rng)
     feature_names = [col for col in df.columns if col not in targets]
     train_data = df.loc[df.index.isin(num_train)]
     test_data = df.loc[df.index.isin(num_test)]
     train_data_clean = drop_outliers(train_data, y)
     if describe:
-        # describe_data(train_data_clean, path, f'clean_train_{y}')
+        describe_data(train_data_clean, path, f'clean_train_{y}')
         train_data_clean = train_data_clean.drop(columns=['meal_id', 'ts_meal_diary'],
                                                  axis=1, errors='ignore')
     test_data_clean = drop_outliers(test_data, y)
     if describe:
-        # describe_data(test_data_clean, path, f'clean_test_{y}')
+        describe_data(test_data_clean, path, f'clean_test_{y}')
         test_data_clean = test_data_clean.drop(columns=['meal_id', 'ts_meal_diary'],
                                                axis=1, errors='ignore')
     return (
@@ -207,8 +206,7 @@ def var_name(var, namespace):
 
 
 print('ADVANCED MODEL TRAINING')
-for subset in [feature_group_1, feature_group_2, feature_group_3,
-               feature_group_4]:
+for subset in [feature_group_1, feature_group_2]:
     feature_group = var_name(subset, locals())
     history[feature_group] = {}
     print(feature_group.upper())
